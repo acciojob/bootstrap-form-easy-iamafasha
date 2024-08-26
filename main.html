@@ -3,11 +3,83 @@
 <html>
 
 <head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Internship form</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
+			<form>
+        <h1 style="text-align: center;">Internship Form</h1>
+        <div class="form-group row">
+  <label for="first-name-input" class="col-sm-2 form-label">First Name</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control is-invalid" id="first-name-input" required>
+    <div class="invalid-feedback">
+      First name required
+    </div>
+  </div>
+</div>
+        <div class="form-group row">
+  <label for="last-name-input" class="col-sm-2 form-label">Last Name</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control is-invalid" id="last-name-input" required>
+    <div class="invalid-feedback">
+      Last name required
+    </div>
+  </div>
+</div>
+        <div class="form-group row">
+  <label for="email-input" class="col-sm-2 form-label">Email Address</label>
+  <div class="col-sm-10">
+    <input type="email" class="form-control is-invalid" id="email-input"required placeholder="xyz@abc.com">
+    <div class="invalid-feedback">
+      Email required
+    </div>
+  </div>
+</div>
+        <div class="form-group row">
+  <label for="college-input" class="col-sm-2 form-label">College</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control is-invalid" id="college-input" required>
+    <div class="invalid-feedback">
+      College name required
+    </div>
+  </div>
+</div>
+        <div class="form-group row">
+  <label for="grad-year-select" class="col-sm-2 form-label">Graduation Year</label>
+  <div class="col-sm-10">
+    <select class="form-control is-invalid form-select" required id="grad-year-select">
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+    </select>
+    <div class="invalid-feedback">
+      Please select a valid graduation year
+    </div>
+  </div>
+</div>
+        <div class="form-group row">
+  <label for="roll-no-input" class="col-sm-2 form-label form-control">Roll No.</label>
+  <div class="col-sm-10">
+    <input type="text" class="form-control is-invalid" id="roll-no-input" required>
+    <div class="invalid-feedback">
+      Roll no required
+    </div>
+  </div>
+</div>
+        <div class="form-group form-check">
+  <input type="checkbox" class="form-check-input" id="conditions-checkbox" required>
+  <label class="form-check-label" for="conditions-checkbox">Agree to terms and conditions</label>
+	<div class="invalid-feedback">
+      You must agree before submitting
+    </div>
+		</div>	
+        <input type="submit" value="Submit Form">
+		</form>
     <script type="text/javascript" src="./script.js">
 </script>
 
